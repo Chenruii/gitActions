@@ -1,0 +1,15 @@
+name : First Workflow
+on : push
+
+jobs: 
+  greeting: 
+    name : GReet me
+    runs-on: ubuntu-latest
+    steps:
+      - users: actions/checkout@v2
+        name: checkout source code
+        -  users: ./actions-a
+        env: 
+        MY_NAME: "Chenruii"
+        
+      
